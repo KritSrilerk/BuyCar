@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <div class="uk-padding">
+        <h1 class="">คำนวณค่างวดรถ</h1>
+        <table class="tb1">
+            <tr>
+                <td class="tb1td1">
+                    ยี่ห้อ 
+                </td>
+                <td class="tb1td2">
+                    <input type="radio" name="car" class="uk-radio" checked> Honda
+                </td>
+                <td class="tb1td2">
+                    <input type="radio" name="car" class="uk-radio"> Toyota
+                </td>
+                <td rowspan="3">
+
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2" class="">
+
+                </td>
+                <td class="">
+                    <input type="radio" name="car" class="uk-radio"> BMW
+                </td>
+                <td class="">
+                    <input type="radio" name="car" class="uk-radio"> Volvo
+                </td>
+            </tr>
+            <tr>
+                <td class="">
+                    <input type="radio" name="car" class="uk-radio"> Mazda
+                </td>
+                <td class="">
+                    <input type="radio" name="car" class="uk-radio"> MG
+                </td>
+            </tr>
+        </table>
+        <table class="tb2">
+            <tr>
+                <td class="tb1td1" >
+                    ราคารถยนต์ 
+                </td>
+                <td class="tdtxt tb2td2">
+                    <input type="text" name="costcar" class="uk-input uk-form-success uk-width-2-3 uk-form-small"> บาท
+                </td>
+                <td class="tb2td3 pad">
+                    <span class="pad">ดอกเบี้ย</span>   
+                    <span class="pad">3.7 %</span> 
+                    <span class="pad">ต่อปี</span> 
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td class="tb1td1">
+                    เงินดาวน์
+                </td>
+                <td class="">
+                    <input type="radio" name="down" id="" class="uk-radio" checked> ไม่ดาวน์
+                </td>
+                <td rowspan="6" class="tb2td3"> 
+
+                </td>
+            </tr>
+            <tr>
+                <td class="">
+                </td>
+                <td class="">
+                    <input type="radio" name="down" class="uk-radio"> ดาวน์
+                    <input type="text" name="costdown" class="uk-input uk-form-success uk-width-1-2 uk-form-small txt" disabled=ture> บาท
+                </td>
+            </tr>
+            <tr>
+                <td class="tb1td1">
+                    ออปชั่น
+                </td>
+                <td class="">
+                    <input type="checkbox" name="chkmac"> ล้อแมกซ์ (20,000 บาท)
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2">
+
+                </td>
+                <td class="">
+                    <input type="checkbox" name="chkglass"> เคลือบแก้ว (5,000 บาท)
+                </td>
+            </tr>
+            <tr>
+                <td class="">
+                    <input type="checkbox" name="chksnim"> พ่นกันสนิม (500 บาท)
+                </td>
+            </tr>
+            <tr>
+                <td class="tb1td1">
+                    ระยะเวลาผ่อน
+                </td>
+                <td class="">
+                    <select name="selmonth" class="uk-select">
+                        <option value="1"> 12 เดือน</option>
+                        <option value="2"> 24 เดือน</option>
+                        <option value="3"> 36 เดือน</option>
+                        <option value="4"> 48 เดือน</option>
+                        <option value="5"> 60 เดือน</option>
+                        <option value="6"> 72 เดือน</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <button class="uk-button uk-button-default uk-button-primary uk-width-1-6" name="btncal">คำนวณ</button>
+        <button class="uk-button uk-button-default uk-button-danger uk-width-1-6" name="btncancel">ยกเลิก</button>
+        <br><br>
+        <table class="tdf">
+            <tr>
+                <td class="tbftd1">
+                    รถยนต์ยี่ห้อ :
+                </td>
+                <td class="tbftd">
+                    <span name="showtypecar" > XXXX </span>
+                </td>
+                <td>
+                    บาท
+                </td>
+            </tr>
+            <tr>
+                <td class="tbftd1">
+                    ราคารถ :
+                </td>
+                <td class="tbftd">
+                    <span name="showcost"> XXXX </span>
+                </td>
+                <td>
+                    บาท
+                </td>
+            </tr>
+            <tr>
+                <td class="tbftd1">
+                    เงินดาวน์ :
+                </td>
+                <td class="tbftd">
+                    <span name="showdown"> XXXX </span>
+                </td>
+                <td>
+                    บาท
+                </td>
+            </tr>
+            <tr>
+                <td class="tbftd1">
+                    ยอดจัด :
+                </td>
+                <td class="tbftd">
+                    <span name="showyodjad"> XXXX </span>
+                </td>
+                <td>
+                    บาท
+                </td>
+            </tr>
+            <tr>
+                <td class="tbftd1">
+                    ดอกเบี้ย :
+                </td>
+                <td class="tbftd">
+                    <span name="showdokbia"> XXXX </span>
+                </td>
+                <td>
+                    บาท
+                </td>
+            </tr>
+            <tr>
+                <td class="tbftd1">
+                    ผ่อน :
+                </td>
+                <td class="tbftd">
+                    <span name="showpon"> XXXX </span>
+                </td>
+                <td>
+                    เดือน
+                </td>
+            </tr>
+            <tr>
+                <td class="tbftd1">
+                    ค่าผ่อนต่อเดือน :
+                </td>
+                <td class="tbftd">
+                    <span name="showcostpon"> XXXX </span>
+                </td>
+                <td>
+                    บาท
+                </td>
+            </tr>
+        </table>
+
+    </div>
+
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit-icons.min.js"></script>
+</body>
+
+</html>
